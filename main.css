@@ -4,5 +4,35 @@
 .title{
   color: purple;
   font-style: italic;
-  
+  grid-row: auto;
+  border: solid;
+  border-color: gold;
+
+}
+.main{
+  display: grid;
+  border: solid;
+  border-color: green;
+}
+.exercise{
+display:grid;
+  border: solid;
+  border-color: black;
+
+}
+.button{
+
+  grid-row: auto;
+  border: solid;
+  border-color: black;
+}
+.footer{
+  grid-row: auto;
+  border: solid;
+  border-color: blue;
+
+}
+#printedexercises{
+  grid-row: auto;
+  font-size: 10px;
 }
