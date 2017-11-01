@@ -47,3 +47,8 @@ $('#name').val("");
 
   })
 })
+module.exports = {
+timer:timer,
+event: event,
+username: username,
+}
