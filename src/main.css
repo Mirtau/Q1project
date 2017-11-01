@@ -1,0 +1,78 @@
+/* Downloaded from https://scriptscodes.com/ */
+
+.center {
+  grid-area: center;
+  ;
+}
+
+.title {
+  color: purple;
+  font-style: italic;
+  grid-row: auto;
+  border: solid;
+  border-color: gold;
+  grid-area: title;
+  padding-left: 10%;
+}
+
+.main {
+  display: grid;
+  border: solid;
+  border-color: green;
+  grid-template-columns: 1fr, 45%, 1fr;
+
+  grid-template-areas: "lside title  rside" "lside timer  rside" "lside exercise rside" "footer footer footer"
+}
+
+.exercise {
+  grid-area: exercise;
+  display: grid;
+  border: solid;
+  border-color: black;
+  grid-row: auto;
+}
+
+.button {
+  grid-area: grid-row: auto;
+  border: solid;
+  border-color: black;
+}
+
+.footer {
+  grid-area: footer;
+  grid-row: auto;
+  border: solid;
+  border-color: blue;
+}
+
+#printedexercises {
+  grid-row: 100%;
+  font-size: 20px;
+  height: =15vh;
+}
+
+.rside {
+  grid-area: rside;
+}
+
+.lside {
+  grid-area: lside;
+}
+
+.lside img {
+  width: 100%;
+  height: 100%;
+}
+
+.rside img {
+  width: 100%;
+  height: 100%;
+}
+
+.timer {
+  border: solid;
+  border-color: red;
+  grid-area: timer;
+  padding-left: 33%;
+  padding-top: 5%;
+}

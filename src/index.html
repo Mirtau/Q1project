@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PomoFit</title>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="exercise.js"></script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body class='main'>
+  <div class="lside">
+    <img src="img/redflowers.JPG" alt="oops">
+  </div>
+  <div class="rside">
+    <img src="img/orangeflower.JPG" alt="opps">
+
+  </div>
+  <!-- <div id="set_timer" class="center"> -->
+
+  <h1 class='title'></h1></h1>
+  <form >
+  <div>
+    <label for="name">Please enter your name</label>
+    <input id="name" type="text" name="text">
+  </div>
+  <div>
+    <button id ='locstor' type="button" name="submit">send</button>
+
+  </div>
+</form>
+  <script type="text/javascript" src="https://theysaidso.com/gadgets/v3/theysaidso.js"></script>
+  <div class="tso_simple_borders">
+    <script>
+      TheySaidSo.render({
+        qod_category: 'inspire'
+      });
+    </script>
+
+
+    <span style="z-index:50;font-size:0.9em;"><img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/><a href="https://theysaidso.com" title="Powered by quotes from theysaidso.com" style="color: #9fcc25; margin-left: 4px; vertical-align: middle;">theysaidso.com</a></span>
+    <input id="pause" type="hidden" value="0" /><br />
+    <table border="1" bordercolor="#000000" cellspacing="0">
+  </div>
+  <tbody class='timer'>
+    <tr>
+      <td align="center" colspan="1" height="25">
+        <b><span id="show_timer">00:00:00</span></b></td>
+    </tr>
+    <tr>
+      <td>
+        Hrs</td>
+      <td>
+        Min</td>
+      <td>
+        Sec</td>
+    </tr>
+    <tr>
+      <td>
+        <input id="hours" maxlength="2" size="2" type="text" value="00" />:</td>
+      <td>
+        <input id="min" maxlength="2" size="2" type="text" value='00' />:</td>
+      <td>
+        <input id="sec" maxlength="2" size="2" type="text" value="00" /></td>
+    </tr>
+    <tr>
+      <td>
+        [<a href="javascript:add_time_clock('1','hours')" data-cke-saved-href="javascript:add_time_clock('1','hours')">+</a>] [<a href="javascript:add_time_clock('2','hours')">-</a>]</td>
+      <td>
+        [<a href="javascript:add_time_clock('1','min')">+</a>] [<a href="javascript:add_time_clock('2','min')">-</a>]</td>
+      <td>
+        <a href="javascript:add_time_clock('1','sec')">+</a> <a href="javascript:add_time_clock('2','sec')">-</a>]</td>
+    </tr>
+    <tr>
+      <td align="center" colspan="1">
+        <input onclick="set_limit()" type="button" value="Start" /> <input onclick="set_limit('1'),document.getElementById('pause').value=1" type="button" value="Pause" /> <input onclick="rset_tmr()" type="button" value="Reset" /></td>
+
+    </tr>
+  </tbody>
+  </table>
+
+
+  <br />
+  <audio class="my_audio" controls preload="none" style="display:none">
+    <source src="http://jasonchan.website/airhorn.mp3" type="audio/mpeg">
+</audio>
+  <button onclick="play_audio('stop')">STOP</button>
+  <div class="times">
+
+
+    <button class='stbt' type="button" name="studytime">25 min</button>
+    <button class='exbt' type="button" name="exercisetime">5 min</button>
+    <button class='clear' type="button" name="clear">clear</button>
+  </div>
+  <div class="exercise">
+
+
+    <p>
+      <button class="ebutton" type="button" name="excercises">exercises</button>
+    </p>
+    <input type="Array" id="printedexercises">
+  </div>
+  <div class="footer">
+    <p>copyright me 2017</p>
+
+  </div>
+  <!-- </div> -->
+
+
+
+
+</body>
+
+</html>
