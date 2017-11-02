@@ -10,7 +10,7 @@
   font-style: italic;
   grid-row: auto;
   border: solid;
-  border-color: gold;
+  /*border-color: gold;*/
   grid-area: title;
   padding-left: 10%;
 }
@@ -18,9 +18,8 @@
 .main {
   display: grid;
   border: solid;
-  border-color: green;
+  /*border-color: green;*/
   grid-template-columns: 1fr, 45%, 1fr;
-
   grid-template-areas: "lside title  rside" "lside timer  rside" "lside exercise rside" "footer footer footer"
 }
 
@@ -28,7 +27,7 @@
   grid-area: exercise;
   display: grid;
   border: solid;
-  border-color: black;
+  /*border-color: black;*/
   grid-row: auto;
 }
 
@@ -42,7 +41,7 @@
   grid-area: footer;
   grid-row: auto;
   border: solid;
-  border-color: blue;
+  /*border-color: blue;*/
 }
 
 #printedexercises {
@@ -71,8 +70,47 @@
 
 .timer {
   border: solid;
-  border-color: red;
+  /*border-color: red;*/
   grid-area: timer;
   padding-left: 33%;
   padding-top: 5%;
+}
+
+@media (max-width: 600px) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas: " title title  title" " timer timer timer  " "timer timer timer " " exercise exercise exercise " " exercise exercise exercise " " footer footer footer" ;
+  }
+  .timer {
+    border-color: blue;
+    grid-area: timer;
+  }
+  .title {
+    grid-area: title;
+  }
+  .exercise {
+    grid-area: exercise;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .lside img {
+    display: none;
+  }
+
+  .rside img {
+    display: none;
+  }
+  .title {
+    color: purple;
+    font-style: italic;
+    border: solid;
+    font-size: 10px;
+    padding-left: 10%;
+}
+.quote{
+display: none;
+}
+
 }
