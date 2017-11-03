@@ -78,9 +78,9 @@
 
 @media (max-width: 600px) {
   .main {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 3(repeat, 1fr);
 
-    grid-template-areas: " title title  title" " timer timer timer  " "timer timer timer " " exercise exercise exercise " " exercise exercise exercise " " footer footer footer" ;
+    grid-template-areas: " title title title " " title title title " "timer timer timer " " exercise exercise exercise "  " footer footer footer " ;
   }
   .timer {
     border-color: blue;
@@ -95,13 +95,13 @@
   .footer {
     grid-area: footer;
   }
-  .lside img {
+  /*.lside img {
     display: none;
   }
 
   .rside img {
     display: none;
-  }
+  }*/
   .title {
     color: purple;
     font-style: italic;
